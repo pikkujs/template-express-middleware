@@ -1,0 +1,10 @@
+{
+  "myScheduledTask": {
+    "pikkuFuncName": "myScheduledTask",
+    "name": "myScheduledTask",
+    "schedule": "*/1 * * * *",
+    "tags": [
+      "hello"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "progressiveEnhancementExample": {
+    "pikkuFuncName": "progressiveEnhancementExample",
+    "inputSchemaName": null,
+    "outputSchemaName": "ProgressiveEnhancementExampleOutput"
+  },
+  "timeSinceOpened": {
+    "pikkuFuncName": "timeSinceOpened",
+    "inputSchemaName": null,
+    "outputSchemaName": "TimeSinceOpenedOutput"
+  },
+  "welcomeToPikku": {
+    "pikkuFuncName": "welcomeToPikku",
+    "inputSchemaName": null,
+    "outputSchemaName": "string"
+  },
+  "helloWorld": {
+    "pikkuFuncName": "helloWorld",
+    "inputSchemaName": null,
+    "outputSchemaName": "string"
+  },
+  "rpcTest": {
+    "pikkuFuncName": "rpcTest",
+    "inputSchemaName": "RpcTestInput",
+    "outputSchemaName": null,
+    "expose": true
+  },
+  "rpcCaller": {
+    "pikkuFuncName": "rpcCaller",
+    "inputSchemaName": "RpcCallerInput",
+    "outputSchemaName": null
+  },
+  "pikkuFn_rpc_wiring_ts_L30C9": {
+    "pikkuFuncName": "pikkuFn_rpc_wiring_ts_L30C9",
+    "inputSchemaName": "PikkuFn_rpc_wiring_ts_L30C9Input",
+    "outputSchemaName": null
+  },
+  "myScheduledTask": {
+    "pikkuFuncName": "myScheduledTask",
+    "inputSchemaName": null,
+    "outputSchemaName": null
+  }
+}
