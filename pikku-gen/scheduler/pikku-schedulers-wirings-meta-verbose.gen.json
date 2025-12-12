@@ -1,0 +1,21 @@
+{
+  "dailySummary": {
+    "pikkuFuncName": "dailySummary",
+    "name": "dailySummary",
+    "schedule": "0 9 * * *",
+    "tags": [
+      "daily",
+      "summary"
+    ]
+  },
+  "weeklyCleanup": {
+    "pikkuFuncName": "weeklyCleanup",
+    "name": "weeklyCleanup",
+    "schedule": "0 2 * * 0",
+    "tags": [
+      "weekly",
+      "cleanup",
+      "maintenance"
+    ]
+  }
+}
