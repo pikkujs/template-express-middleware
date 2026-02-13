@@ -1,0 +1,51 @@
+{
+  "name": "test-app",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@pikku/core": "^0.11.2",
+    "@pikku/jose": "^0.11.1",
+    "@pikku/schema-cfworker": "^0.11.0",
+    "eventsource": "^4.1.0",
+    "ws": "^8.19.0",
+    "zod": "^4",
+    "@pikku/express-middleware": "^0.11.1",
+    "@pikku/schedule": "^0.11.1",
+    "cookie-parser": "^1.4.7",
+    "express": "^5"
+  },
+  "devDependencies": {
+    "@pikku/cli": "^0.11.3",
+    "@pikku/fetch": "^0.11.1",
+    "@pikku/websocket": "^0.11.0",
+    "@types/node": "^24",
+    "@types/ws": "^8",
+    "concurrently": "^9.2.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.6",
+    "@types/express-serve-static-core": "^5.1.1"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "ncu:pikku": "npx npm-check-updates -f '/@pikku/.*/'",
+    "pikku": "pikku all",
+    "test:http-fetch": "npx tsx client/http-fetch.ts",
+    "test:http-sse": "npx tsx client/http-sse.ts",
+    "test:rpc": "npx tsx client/rpc.ts",
+    "test:websocket": "npx tsx client/websocket.ts",
+    "test:cli:local": "npx tsx client/cli-local.gen.ts",
+    "test:workflows": "npx tsx client/workflow.ts",
+    "test:triggers": "npx tsx client/trigger.ts",
+    "start": "tsx src/start.ts",
+    "dev": "tsx --watch src/start.ts",
+    "postinstall": "pikku all",
+    "test": "npm run test:http-fetch && npm run test:http-sse",
+    "stackblitz": "concurrently 'pikku watch --silent' 'npm run dev'"
+  },
+  "main": "src/start.ts",
+  "stackblitz": {
+    "startCommand": "npm run stackblitz"
+  }
+}

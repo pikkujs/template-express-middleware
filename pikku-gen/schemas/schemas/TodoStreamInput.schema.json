@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","properties":{"userId":{"description":"User ID (uses demo user if not provided)","type":"string"}},"additionalProperties":false}
