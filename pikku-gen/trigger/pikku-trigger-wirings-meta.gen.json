@@ -1,0 +1,6 @@
+{
+  "test-event": {
+    "pikkuFuncId": "onTestEvent",
+    "name": "test-event"
+  }
+}

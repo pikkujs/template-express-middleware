@@ -1,0 +1,240 @@
+{
+  "get": {
+    "/todos/progress": {
+      "pikkuFuncId": "processTodosProgress",
+      "route": "/todos/progress",
+      "method": "get",
+      "tags": [
+        "sse",
+        "realtime"
+      ],
+      "middleware": [
+        {
+          "type": "http",
+          "route": "*"
+        }
+      ],
+      "sse": true
+    },
+    "/todos/stream": {
+      "pikkuFuncId": "todoStream",
+      "route": "/todos/stream",
+      "method": "get",
+      "tags": [
+        "sse",
+        "realtime"
+      ],
+      "middleware": [
+        {
+          "type": "http",
+          "route": "*"
+        }
+      ],
+      "sse": true
+    },
+    "/todos": {
+      "pikkuFuncId": "listTodos",
+      "route": "/todos",
+      "method": "get",
+      "tags": [
+        "todos"
+      ],
+      "middleware": [
+        {
+          "type": "http",
+          "route": "*"
+        }
+      ]
+    },
+    "/todos/:id": {
+      "pikkuFuncId": "getTodo",
+      "route": "/todos/:id",
+      "method": "get",
+      "params": [
+        "id"
+      ],
+      "tags": [
+        "todos"
+      ],
+      "middleware": [
+        {
+          "type": "http",
+          "route": "*"
+        }
+      ]
+    }
+  },
+  "post": {
+    "/rpc/:rpcName": {
+      "pikkuFuncId": "rpcCaller",
+      "route": "/rpc/:rpcName",
+      "method": "post",
+      "params": [
+        "rpcName"
+      ],
+      "middleware": [
+        {
+          "type": "http",
+          "route": "*"
+        }
+      ]
+    },
+    "/todos": {
+      "pikkuFuncId": "createTodo",
+      "route": "/todos",
+      "method": "post",
+      "tags": [
+        "todos"
+      ],
+      "middleware": [
+        {
+          "type": "http",
+          "route": "*"
+        }
+      ]
+    },
+    "/todos/:id/complete": {
+      "pikkuFuncId": "completeTodo",
+      "route": "/todos/:id/complete",
+      "method": "post",
+      "params": [
+        "id"
+      ],
+      "tags": [
+        "todos"
+      ],
+      "middleware": [
+        {
+          "type": "http",
+          "route": "*"
+        }
+      ]
+    },
+    "/rpc/agent/:agentName": {
+      "pikkuFuncId": "agentCaller",
+      "route": "/rpc/agent/:agentName",
+      "method": "post",
+      "params": [
+        "agentName"
+      ],
+      "tags": [
+        "pikku:public"
+      ],
+      "middleware": [
+        {
+          "type": "http",
+          "route": "*"
+        }
+      ]
+    },
+    "/rpc/agent/:agentName/stream": {
+      "pikkuFuncId": "agentStreamCaller",
+      "route": "/rpc/agent/:agentName/stream",
+      "method": "post",
+      "params": [
+        "agentName"
+      ],
+      "tags": [
+        "pikku:public"
+      ],
+      "middleware": [
+        {
+          "type": "http",
+          "route": "*"
+        }
+      ],
+      "sse": true
+    },
+    "/rpc/agent/:agentName/approve": {
+      "pikkuFuncId": "agentApproveCaller",
+      "route": "/rpc/agent/:agentName/approve",
+      "method": "post",
+      "params": [
+        "agentName"
+      ],
+      "tags": [
+        "pikku:public"
+      ],
+      "middleware": [
+        {
+          "type": "http",
+          "route": "*"
+        }
+      ]
+    },
+    "/rpc/agent/:agentName/resume": {
+      "pikkuFuncId": "agentResumeCaller",
+      "route": "/rpc/agent/:agentName/resume",
+      "method": "post",
+      "params": [
+        "agentName"
+      ],
+      "tags": [
+        "pikku:public"
+      ],
+      "middleware": [
+        {
+          "type": "http",
+          "route": "*"
+        }
+      ],
+      "sse": true
+    }
+  },
+  "put": {
+    "/todos/:id": {
+      "pikkuFuncId": "updateTodo",
+      "route": "/todos/:id",
+      "method": "put",
+      "params": [
+        "id"
+      ],
+      "tags": [
+        "todos"
+      ],
+      "middleware": [
+        {
+          "type": "http",
+          "route": "*"
+        }
+      ]
+    }
+  },
+  "delete": {
+    "/todos/:id": {
+      "pikkuFuncId": "deleteTodo",
+      "route": "/todos/:id",
+      "method": "delete",
+      "params": [
+        "id"
+      ],
+      "tags": [
+        "todos"
+      ],
+      "middleware": [
+        {
+          "type": "http",
+          "route": "*"
+        }
+      ]
+    }
+  },
+  "head": {},
+  "patch": {},
+  "options": {
+    "/rpc/:rpcName": {
+      "pikkuFuncId": "http:options:/rpc/:rpcName",
+      "route": "/rpc/:rpcName",
+      "method": "options",
+      "params": [
+        "rpcName"
+      ],
+      "middleware": [
+        {
+          "type": "http",
+          "route": "*"
+        }
+      ]
+    }
+  }
+}

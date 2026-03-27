@@ -1,0 +1,43 @@
+{
+  "definitions": {},
+  "instances": {
+    "http:*:0": {
+      "definitionId": "authJsSession",
+      "sourceFile": "/home/runner/work/pikku/test-app/src/middleware.ts",
+      "position": 325,
+      "isFactoryCall": true
+    }
+  },
+  "httpGroups": {
+    "*": {
+      "exportName": "httpAuthMiddleware",
+      "sourceFile": "/home/runner/work/pikku/test-app/src/middleware.ts",
+      "position": 325,
+      "services": {
+        "optimized": false,
+        "services": []
+      },
+      "count": 1,
+      "instanceIds": [
+        "http:*:0"
+      ],
+      "isFactory": true
+    }
+  },
+  "tagGroups": {},
+  "channelMiddleware": {
+    "definitions": {
+      "appendModified": {
+        "services": {
+          "optimized": true,
+          "services": []
+        },
+        "sourceFile": "/home/runner/work/pikku/test-app/src/middleware.ts",
+        "position": 511,
+        "exportedName": "appendModified"
+      }
+    },
+    "instances": {},
+    "tagGroups": {}
+  }
+}

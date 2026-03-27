@@ -1,0 +1,27 @@
+{
+  "resourcesMeta": {},
+  "toolsMeta": {
+    "createTodo": {
+      "pikkuFuncId": "createTodo",
+      "name": "createTodo",
+      "description": "Create a new todo item with title, description, priority, dueDate, and tags",
+      "inputSchema": "CreateTodoInput",
+      "outputSchema": "CreateTodoOutput"
+    },
+    "deleteTodo": {
+      "pikkuFuncId": "deleteTodo",
+      "name": "deleteTodo",
+      "description": "Delete a todo by ID",
+      "inputSchema": "DeleteTodoInput",
+      "outputSchema": "DeleteTodoOutput"
+    },
+    "completeTodo": {
+      "pikkuFuncId": "completeTodo",
+      "name": "completeTodo",
+      "description": "Mark a todo as complete by ID",
+      "inputSchema": "CompleteTodoInput",
+      "outputSchema": "CompleteTodoOutput"
+    }
+  },
+  "promptsMeta": {}
+}

@@ -1,0 +1,307 @@
+{
+  "listTodos": {
+    "pikkuFuncId": "listTodos",
+    "functionType": "user",
+    "funcWrapper": "pikkuSessionlessFunc",
+    "sessionless": true,
+    "name": "listTodos",
+    "inputSchemaName": "ListTodosInput",
+    "outputSchemaName": "ListTodosOutput",
+    "inputs": [
+      "ListTodosInput"
+    ],
+    "outputs": [
+      "ListTodosOutput"
+    ],
+    "contractHash": "32b1863e7c64fe83",
+    "inputHash": "743c6408",
+    "outputHash": "7e54d3a8"
+  },
+  "getTodo": {
+    "pikkuFuncId": "getTodo",
+    "functionType": "user",
+    "funcWrapper": "pikkuSessionlessFunc",
+    "sessionless": true,
+    "name": "getTodo",
+    "inputSchemaName": "GetTodoInput",
+    "outputSchemaName": "GetTodoOutput",
+    "inputs": [
+      "GetTodoInput"
+    ],
+    "outputs": [
+      "GetTodoOutput"
+    ],
+    "contractHash": "029a28bcdc9af2d5",
+    "inputHash": "f5d4fbb3",
+    "outputHash": "52ed2426"
+  },
+  "createTodo": {
+    "pikkuFuncId": "createTodo",
+    "functionType": "user",
+    "funcWrapper": "pikkuSessionlessFunc",
+    "sessionless": true,
+    "name": "createTodo",
+    "inputSchemaName": "CreateTodoInput",
+    "outputSchemaName": "CreateTodoOutput",
+    "inputs": [
+      "CreateTodoInput"
+    ],
+    "outputs": [
+      "CreateTodoOutput"
+    ],
+    "mcp": true,
+    "contractHash": "dca8660b60464888",
+    "inputHash": "b84758d0",
+    "outputHash": "380a6c7a"
+  },
+  "updateTodo": {
+    "pikkuFuncId": "updateTodo",
+    "functionType": "user",
+    "funcWrapper": "pikkuSessionlessFunc",
+    "sessionless": true,
+    "name": "updateTodo",
+    "inputSchemaName": "UpdateTodoInput",
+    "outputSchemaName": "UpdateTodoOutput",
+    "inputs": [
+      "UpdateTodoInput"
+    ],
+    "outputs": [
+      "UpdateTodoOutput"
+    ],
+    "contractHash": "f82f792f46014da9",
+    "inputHash": "e5eb663a",
+    "outputHash": "71ee924e"
+  },
+  "deleteTodo": {
+    "pikkuFuncId": "deleteTodo",
+    "functionType": "user",
+    "funcWrapper": "pikkuSessionlessFunc",
+    "sessionless": true,
+    "name": "deleteTodo",
+    "inputSchemaName": "DeleteTodoInput",
+    "outputSchemaName": "DeleteTodoOutput",
+    "inputs": [
+      "DeleteTodoInput"
+    ],
+    "outputs": [
+      "DeleteTodoOutput"
+    ],
+    "mcp": true,
+    "contractHash": "89ebed5eb1ca9ea9",
+    "inputHash": "93a06895",
+    "outputHash": "afd26502"
+  },
+  "completeTodo": {
+    "pikkuFuncId": "completeTodo",
+    "functionType": "user",
+    "funcWrapper": "pikkuSessionlessFunc",
+    "sessionless": true,
+    "name": "completeTodo",
+    "inputSchemaName": "CompleteTodoInput",
+    "outputSchemaName": "CompleteTodoOutput",
+    "inputs": [
+      "CompleteTodoInput"
+    ],
+    "outputs": [
+      "CompleteTodoOutput"
+    ],
+    "mcp": true,
+    "contractHash": "a46b699fa10f5530",
+    "inputHash": "0d902b91",
+    "outputHash": "397e2ec1"
+  },
+  "dailySummary": {
+    "pikkuFuncId": "dailySummary",
+    "functionType": "user",
+    "funcWrapper": "pikkuVoidFunc",
+    "sessionless": true,
+    "name": "dailySummary",
+    "inputSchemaName": null,
+    "outputSchemaName": null,
+    "inputs": [],
+    "outputs": [],
+    "contractHash": "71bb3344994c6f5a",
+    "inputHash": "6898c699",
+    "outputHash": "daccc144"
+  },
+  "weeklyCleanup": {
+    "pikkuFuncId": "weeklyCleanup",
+    "functionType": "user",
+    "funcWrapper": "pikkuVoidFunc",
+    "sessionless": true,
+    "name": "weeklyCleanup",
+    "inputSchemaName": null,
+    "outputSchemaName": null,
+    "inputs": [],
+    "outputs": [],
+    "contractHash": "8dc5261cf54c4762",
+    "inputHash": "0c2483de",
+    "outputHash": "3d019654"
+  },
+  "processTodosProgress": {
+    "pikkuFuncId": "processTodosProgress",
+    "functionType": "user",
+    "funcWrapper": "pikkuFunc",
+    "sessionless": false,
+    "name": "processTodosProgress",
+    "inputSchemaName": "ProcessTodosProgressInput",
+    "outputSchemaName": "ProcessTodosProgressOutput",
+    "inputs": [
+      "ProcessTodosProgressInput"
+    ],
+    "outputs": [
+      "ProcessTodosProgressOutput"
+    ],
+    "contractHash": "897bf74b35c425ee",
+    "inputHash": "9c0dba52",
+    "outputHash": "5033c8d9"
+  },
+  "todoStream": {
+    "pikkuFuncId": "todoStream",
+    "functionType": "user",
+    "funcWrapper": "pikkuSessionlessFunc",
+    "sessionless": true,
+    "name": "todoStream",
+    "inputSchemaName": "TodoStreamInput",
+    "outputSchemaName": "TodoStreamOutput",
+    "inputs": [
+      "TodoStreamInput"
+    ],
+    "outputs": [
+      "TodoStreamOutput"
+    ],
+    "contractHash": "1cedd36d522af411",
+    "inputHash": "5d5463b9",
+    "outputHash": "ed92a5a9"
+  },
+  "testEventTrigger": {
+    "pikkuFuncId": "testEventTrigger",
+    "functionType": "user",
+    "funcWrapper": "pikkuTriggerFunc",
+    "sessionless": true,
+    "name": "testEventTrigger",
+    "inputSchemaName": "TestEventTriggerInput",
+    "outputSchemaName": "TestEventTriggerOutput",
+    "inputs": [
+      "TestEventTriggerInput"
+    ],
+    "outputs": [
+      "TestEventTriggerOutput"
+    ],
+    "contractHash": "a6d72d8f1dc4cde3",
+    "inputHash": "8b4e8538",
+    "outputHash": "45e8d04f"
+  },
+  "onTestEvent": {
+    "pikkuFuncId": "onTestEvent",
+    "functionType": "user",
+    "funcWrapper": "pikkuSessionlessFunc",
+    "sessionless": true,
+    "name": "onTestEvent",
+    "inputSchemaName": "OnTestEventInput",
+    "outputSchemaName": "OnTestEventOutput",
+    "inputs": [
+      "OnTestEventInput"
+    ],
+    "outputs": [
+      "OnTestEventOutput"
+    ],
+    "remote": true
+  },
+  "rpcCaller": {
+    "pikkuFuncId": "rpcCaller",
+    "functionType": "user",
+    "funcWrapper": "pikkuSessionlessFunc",
+    "sessionless": true,
+    "name": "rpcCaller",
+    "inputSchemaName": "RpcCallerInput",
+    "outputSchemaName": null,
+    "inputs": [
+      "RpcCallerInput"
+    ],
+    "outputs": [],
+    "contractHash": "f6901fd233740bf4",
+    "inputHash": "a69cacc4",
+    "outputHash": "629e0b5a"
+  },
+  "http:options:/rpc/:rpcName": {
+    "pikkuFuncId": "http:options:/rpc/:rpcName",
+    "functionType": "inline",
+    "name": "/rpc/:rpcName",
+    "inputSchemaName": "HttpOptionsRpcRpcNameInput",
+    "outputSchemaName": "unknown",
+    "inputs": [
+      "HttpOptionsRpcRpcNameInput"
+    ],
+    "outputs": [
+      "unknown"
+    ],
+    "contractHash": "6b32c899db6178ed",
+    "inputHash": "a77e6370",
+    "outputHash": "44812c8c"
+  },
+  "agentCaller": {
+    "pikkuFuncId": "agentCaller",
+    "functionType": "user",
+    "funcWrapper": "pikkuSessionlessFunc",
+    "sessionless": true,
+    "name": "agentCaller",
+    "inputSchemaName": "AgentCallerInput",
+    "outputSchemaName": null,
+    "inputs": [
+      "AgentCallerInput"
+    ],
+    "outputs": [],
+    "contractHash": "76619abd99f23189",
+    "inputHash": "4d1eddbc",
+    "outputHash": "9a3af204"
+  },
+  "agentStreamCaller": {
+    "pikkuFuncId": "agentStreamCaller",
+    "functionType": "user",
+    "funcWrapper": "pikkuSessionlessFunc",
+    "sessionless": true,
+    "name": "agentStreamCaller",
+    "inputSchemaName": "AgentStreamCallerInput",
+    "outputSchemaName": null,
+    "inputs": [
+      "AgentStreamCallerInput"
+    ],
+    "outputs": [],
+    "contractHash": "0e5c814e26d3294f",
+    "inputHash": "773d4d52",
+    "outputHash": "641a263e"
+  },
+  "agentApproveCaller": {
+    "pikkuFuncId": "agentApproveCaller",
+    "functionType": "user",
+    "funcWrapper": "pikkuSessionlessFunc",
+    "sessionless": true,
+    "name": "agentApproveCaller",
+    "inputSchemaName": "AgentApproveCallerInput",
+    "outputSchemaName": null,
+    "inputs": [
+      "AgentApproveCallerInput"
+    ],
+    "outputs": [],
+    "contractHash": "83a9293c4b51d65c",
+    "inputHash": "f1628b7c",
+    "outputHash": "ef71f08a"
+  },
+  "agentResumeCaller": {
+    "pikkuFuncId": "agentResumeCaller",
+    "functionType": "user",
+    "funcWrapper": "pikkuSessionlessFunc",
+    "sessionless": true,
+    "name": "agentResumeCaller",
+    "inputSchemaName": "AgentResumeCallerInput",
+    "outputSchemaName": null,
+    "inputs": [
+      "AgentResumeCallerInput"
+    ],
+    "outputs": [],
+    "contractHash": "0648ffb2cfa9d861",
+    "inputHash": "f25b50dd",
+    "outputHash": "ee89e454"
+  }
+}
