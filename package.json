@@ -1,0 +1,91 @@
+{
+  "name": "test-app",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@pikku/addon-console": "workspace:*",
+    "@pikku/addon-graph": "workspace:*",
+    "@pikku/better-auth": "^0.12.26",
+    "@pikku/core": "^0.12.90",
+    "@pikku/jose": "^0.12.6",
+    "@pikku/kysely": "workspace:^",
+    "@pikku/schema-cfworker": "^0.12.6",
+    "better-auth": "^1.6.29",
+    "eventsource": "^5.1.0",
+    "kysely": "^0.29.5",
+    "ws": "^8.21.3",
+    "zod": "^4",
+    "@pikku/express-middleware": "^0.12.8",
+    "@pikku/schedule": "^0.12.7",
+    "cookie-parser": "^1.4.7",
+    "express": "^5"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-sqs": "^3.1111.0",
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "@pikku/cli": "^0.12.113",
+    "@pikku/cloudflare": "workspace:*",
+    "@pikku/deploy-cloudflare": "workspace:*",
+    "@pikku/deploy-serverless": "workspace:*",
+    "@pikku/deploy-standalone": "workspace:*",
+    "@pikku/fetch": "^0.12.9",
+    "@pikku/lambda": "workspace:*",
+    "@pikku/modelcontextprotocol": "workspace:*",
+    "@pikku/node-http-server": "workspace:*",
+    "@pikku/schedule": "workspace:*",
+    "@pikku/websocket": "^0.12.4",
+    "@types/aws-lambda": "^8.10.162",
+    "@types/node": "^24",
+    "@types/ws": "^8",
+    "concurrently": "^10.0.5",
+    "serverless": "^4.41.0",
+    "serverless-offline": "^14.8.0",
+    "serverless-offline-sqs": "^9.0.1",
+    "tsx": "^4.23.12",
+    "typescript": "^6.0.3",
+    "wrangler": "^4.123.0",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.6",
+    "@types/express-serve-static-core": "^5.1.3"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "ncu:pikku": "npx npm-check-updates -f '/@pikku/.*/'",
+    "pikku": "pikku all",
+    "test:http-fetch": "npx tsx client/http-fetch.ts",
+    "test:http-sse": "npx tsx client/http-sse.ts",
+    "test:mcp": "npx tsx client/mcp.ts",
+    "test:mcp:http": "npx tsx client/mcp-http.ts",
+    "test:queue": "npx tsx client/queue.ts",
+    "test:rpc": "npx tsx client/rpc.ts",
+    "test:runtime-rpc": "npx tsx client/runtime-rpc.ts",
+    "test:websocket": "npx tsx client/websocket.ts",
+    "test:cli:local": "npx tsx client/cli-local.gen.ts",
+    "test:cli:raw": "npx tsx client/cli-raw.ts list",
+    "test:workflows": "npx tsx client/workflow.ts",
+    "test:triggers": "npx tsx client/trigger.ts",
+    "test:agent-http": "npx tsx client/agent-http.ts",
+    "test:agent-sse": "npx tsx client/agent-sse.ts",
+    "test:runtime": "npx tsx scripts/test-runtime.ts",
+    "start:mcp:http": "npx tsx scripts/start-mcp-http.ts",
+    "start": "tsx src/start.ts",
+    "dev": "tsx --watch src/start.ts",
+    "postinstall": "pikku all",
+    "test": "npm run test:http-fetch && npm run test:http-sse",
+    "stackblitz": "concurrently 'pikku watch --silent' 'npm run dev'"
+  },
+  "imports": {
+    "#pikku/*.js": "./pikku-gen/*.ts",
+    "#pikku/*": [
+      "./pikku-gen/*/index.ts",
+      "./pikku-gen/*"
+    ]
+  },
+  "main": "src/start.ts",
+  "exports": {
+    ".": "./src/start.ts"
+  },
+  "stackblitz": {
+    "startCommand": "npm run stackblitz"
+  }
+}
